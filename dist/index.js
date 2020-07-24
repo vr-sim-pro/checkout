@@ -3315,7 +3315,7 @@ if (!stateHelper.IsPost) {
 }
 // Post
 else {
-    cleanup();
+    //cleanup();
 }
 
 
@@ -5960,7 +5960,7 @@ class GitCommandManager {
     }
     tryClean() {
         return __awaiter(this, void 0, void 0, function* () {
-            const output = yield this.execGit(['clean', '-ffdx'], true);
+            const output = yield this.execGit(['clean', '-ffd'], true);
             return output.exitCode === 0;
         });
     }
